@@ -1,6 +1,0 @@
-{
-  "name": "Let's Do It Together - Academia de Inglés",
-  "description": "Sitio web del proyecto educativo Let's Do It Together en Cúcuta, Colombia, con bitácora semanal, noticias, tips ICFES y guía para Visual Studio Code / GitHub.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
