@@ -38,6 +38,8 @@ export interface NewsTip {
   tags: string[];
   imageUrl: string;
   videoUrl?: string;
+  sourceUrl?: string;
+  sourceCitation?: string;
 }
 
 export interface IcfesQuestion {
