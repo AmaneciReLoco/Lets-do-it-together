@@ -34,20 +34,25 @@ export const weeklyEntries: WeeklyEntry[] = [
       "Planteamiento de la misión y visión con valores de apoyo mutuo y servicio cristiano."
     ],
     imageUrl: "",
-    imageAlt: "Evidencia gráfica: El propio sitio web",
+    imageAlt: "Evidencia gráfica: El propio sitio web desarrollado",
     multimediaType: "series"
   },
   {
     id: "semana-2",
     weekNumber: 2,
-    title: "Semana 2: ¿?",
-    subtitle: "¿?",
-    description: "¿?",
-    date: "Semana 2 • Pendiente",
-    tags: ["¿?"],
-    highlights: [],
+    title: "Semana 2: Creación de Sección de Noticias, Referenciación y Actualización Web",
+    subtitle: "Investigación en Dialnet sobre herramientas digitales y diseño de la sección de noticias",
+    description: "Para la segunda entrega se actualizó el sitio web con la creación y estructuración de la sección de Noticias, Tips y Recursos. Se integró una referencia académica e investigativa indexada en Dialnet (Cód. 8722118) que analiza el impacto de herramientas digitales e interactivas en la motivación y competencias comunicativas de estudiantes de grado 11 en Colombia. Además, se perfeccionó el diseño (paleta cromática, tipografías, menú interactivo y organización estética de Semana 1 y Semana 2).",
+    date: "Semana 2 • Noticias y Actualización",
+    tags: ["Sección de Noticias", "Referencia Dialnet", "Diseño & Menú", "Investigación Grado 11", "Actualización Web"],
+    highlights: [
+      "Diseño y estructuración de la nueva sección de Noticias, Tips y Recursos clasificados por categorías.",
+      "Integración y referenciación académica de la investigación de Dialnet (Cód. 8722118) sobre el uso de tecnologías e interactividad en el aprendizaje del inglés.",
+      "Consolidación estética del sitio web: colores corporativos, tipografía refinada, menú responsive y organización de entradas.",
+      "Presentación estructurada de las actividades y avances correspondientes a Semana 1 y Semana 2."
+    ],
     imageUrl: "",
-    imageAlt: "¿?",
+    imageAlt: "Evidencia gráfica: Sección de Noticias y artículo de Dialnet integrado en el sitio",
     multimediaType: "music"
   },
   {
@@ -80,6 +85,36 @@ export const weeklyEntries: WeeklyEntry[] = [
 
 export const newsAndTips: NewsTip[] = [
   {
+    id: "noticia-dialnet-investigacion",
+    category: "noticia",
+    title: "Investigación Dialnet: El Impacto de las Herramientas Digitales e Interactivas en el Aprendizaje del Inglés en Grado 11",
+    date: "24 Agosto, 2026",
+    author: "Análisis Académico • Dialnet (Cód. 8722118)",
+    readTime: "5 min de lectura",
+    excerpt: "Un estudio científico realizado con 332 estudiantes de grado 11 en Colombia demuestra que las herramientas digitales e interactivas fortalecen significativamente la motivación y las competencias comunicativas del Marco Común Europeo.",
+    content: `
+Esta investigación académica indexada en el portal científico **Dialnet (Código de artículo: 8722118)** titulada *"El uso de Duolingo para el aprendizaje del inglés como lengua extranjera / The Use of Duolingo in Learning English as a Foreign Language"*, analiza el papel fundamental que desempeñan las aplicaciones y herramientas digitales interactivas en la enseñanza del inglés como lengua extranjera (EFL).
+
+### 🔍 Aspectos clave del estudio:
+- **Población evaluada:** Se llevó a cabo con una muestra de **332 estudiantes de grado 11** pertenecientes a cuatro instituciones educativas oficiales y privadas en Colombia (Boyacá y Duitama).
+- **Metodología:** Investigación descriptiva cuantitativa con cuestionarios previos y posteriores para medir el desarrollo de competencias comunicativas según los estándares del **Marco Común Europeo de Referencia para las Lenguas (MCER)**.
+- **Resultados concluyentes:** El estudio demostró que el aprendizaje a través de dinámicas interactivas y digitales aumenta notablemente la **motivación estudiantil**, favorece la retención de vocabulario contextualizado y supera la apatía provocada por las clases tradicionales de memorización de reglas gramaticales abstractas.
+
+### 💡 Conexión con nuestra idea de negocio "Let's Do It Together":
+Este artículo académico valida científicamente el pilar de nuestra academia: **los jóvenes aprenden más y mejor cuando el idioma se conecta con recursos interactivos, multimedia y cotidianos** en lugar de libros de texto monótonos. En *Let's Do It Together*, complementamos este principio sumando además inmersión con series, música en inglés, webcomics y acompañamiento guiado con valores de servicio y apoyo mutuo.
+
+---
+**Referencia bibliográfica y enlace oficial:**
+- **Portal:** Dialnet (Universidad de La Rioja)
+- **Código del documento:** \`8722118\`
+- **Enlace de consulta directa:** https://dialnet.unirioja.es/servlet/articulo?codigo=8722118
+    `,
+    tags: ["Dialnet", "Investigación", "Grado 11", "Herramientas Digitales", "Bilingüismo", "Evidencia Científica"],
+    imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    sourceUrl: "https://dialnet.unirioja.es/servlet/articulo?codigo=8722118",
+    sourceCitation: "Dialnet • Código de Artículo 8722118"
+  },
+  {
     id: "tip-1",
     category: "tip",
     title: "5 Técnicas para Aprender Inglés Viendo tus Series Favoritas sin Frustrarte",
@@ -90,10 +125,10 @@ export const newsAndTips: NewsTip[] = [
     content: `
 Aprender con series no significa solo sentarse a ver maratones pasivamente; requiere una técnica activa pero divertida:
 
-1. Paso 1: Audio en inglés con subtítulos en inglés (CC): Evita subtítulos en español porque tu cerebro leerá en español e ignorará el audio en inglés. Al leer en inglés mientras escuchas, asocias la ortografía con los fonemas reales.
-2. Paso 2: La técnica del 'Shadowing' (Eco Vocal): Elige una escena corta de 2 minutos. Pausa después de cada frase de tu personaje favorito y repítela imitando su entonación, ritmo y emoción.
-3. Paso 3: El cuaderno de expresiones vivas: Anota frases completas que te gusten (ej: "I've got your back" en vez de solo traducir "back = espalda").
-4. Paso 4: Repite el episodio sin subtítulos: Te sorprenderá notar cómo tu oído ahora caza palabras que antes sonaban como un solo murmullo.
+1. **Paso 1: Audio en inglés con subtítulos en inglés (CC):** Evita subtítulos en español porque tu cerebro leerá en español e ignorará el audio en inglés. Al leer en inglés mientras escuchas, asocias la ortografía con los fonemas reales.
+2. **Paso 2: La técnica del 'Shadowing' (Eco Vocal):** Elige una escena corta de 2 minutos. Pausa después de cada frase de tu personaje favorito y repítela imitando su entonación, ritmo y emoción.
+3. **Paso 3: El cuaderno de expresiones vivas:** Anota frases completas que te gusten (ej: "I've got your back" en vez de solo traducir "back = espalda").
+4. **Paso 4: Repite el episodio sin subtítulos:** Te sorprenderá notar cómo tu oído ahora caza palabras que antes sonaban como un solo murmullo.
     `,
     tags: ["Series", "Pronunciación", "Método Natural", "Tips"],
     imageUrl: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=800&q=80"
@@ -103,17 +138,17 @@ Aprender con series no significa solo sentarse a ver maratones pasivamente; requ
     category: "icfes",
     title: "Estrategias Clave para Sacar más de 75 Puntos en el ICFES de Inglés en Cúcuta",
     date: "18 Agosto, 2026",
-    author: "Equipo Let's Do It Together",
+    author: "Tutoría Académica Saber 11",
     readTime: "6 min de lectura",
     excerpt: "Desglosamos las 7 partes de la prueba de inglés del ICFES. Conoce las trampas más comunes en avisos públicos, diálogos cortos y comprensión de lectura.",
     content: `
 La prueba de inglés del ICFES no busca que seas un diccionario andante, sino que entiendas la función comunicativa del idioma:
 
-- Parte 1 Avisos de señalización: Fíjate en los lugares (Hospital, Airport, Street). Identifica palabras clave de peligro, instrucción o prohibición (No parking, Danger, Please wash hands).
-- Parte 2 Emparejamiento de definiciones: Lee primero las opciones de la A a la H y luego busca palabras clave en cada enunciado.
-- Parte 3 Conversaciones cortas: Responde según la cortesía y la intención social, no de forma literal.
-- Parte 4 Gramática y vocabulario en textos): Revisa las palabras antes y después del espacio para deducir si falta una preposición, un conector o un verbo.
-- Parte 7 Textos complejos: Lee las preguntas antes que el texto para saber qué información específica estás rastreando.
+- **Parte 1 (Avisos de señalización):** Fíjate en los lugares (Hospital, Airport, Street). Identifica palabras clave de peligro, instrucción o prohibición (No parking, Danger, Please wash hands).
+- **Parte 2 (Emparejamiento de definiciones):** Lee primero las opciones de la A a la H y luego busca palabras clave en cada enunciado.
+- **Parte 3 (Conversaciones cortas):** Responde según la cortesía y la intención social, no de forma literal.
+- **Parte 4 (Gramática y vocabulario en textos):** Revisa las palabras antes y después del espacio para deducir si falta una preposición, un conector o un verbo.
+- **Parte 7 (Textos complejos):** Lee las preguntas antes que el texto para saber qué información específica estás rastreando.
     `,
     tags: ["ICFES", "Saber 11", "Técnicas de Examen", "Cúcuta"],
     imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80"
@@ -123,13 +158,13 @@ La prueba de inglés del ICFES no busca que seas un diccionario andante, sino qu
     category: "noticia",
     title: "La Brecha del Bilingüismo en Norte de Santander: Un Desafío que Podemos Vencer Juntos",
     date: "15 Agosto, 2026",
-    author: "Equipo Let's Do It Together",
+    author: "Redacción Educativa Cúcuta",
     readTime: "5 min de lectura",
     excerpt: "Los informes recientes revelan la urgencia de métodos pedagógicos modernos en la frontera para brindar oportunidades de empleo remoto y becas internacionales a nuestros jóvenes.",
     content: `
 Cúcuta es una ciudad con un potencial inmenso de talento juvenil y creatividad. Sin embargo, el acceso a academias de idiomas tradicionales con mensualidades elevadas y metodologías monótonas ha dejado atrás a miles de estudiantes talentosos.
 
-En Let's Do It Together creemos firmemente que la educación debe ser un acto de amor y servicio cristiano. Al romper con el molde anticuado de copiar tablas gramaticales en un cuaderno y conectar a los muchachos con la cultura viva del idioma, el inglés pasa de ser 'la materia que se pierde' a ser la herramienta que transforma vidas.
+En **Let's Do It Together** creemos firmemente que la educación debe ser un acto de amor y servicio cristiano. Al romper con el molde anticuado de copiar tablas gramaticales en un cuaderno y conectar a los muchachos con la cultura viva del idioma, el inglés pasa de ser 'la materia que se pierde' a ser la herramienta que transforma vidas.
     `,
     tags: ["Educación", "Frontera", "Oportunidades", "Impacto Social"],
     imageUrl: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80"
@@ -139,17 +174,17 @@ En Let's Do It Together creemos firmemente que la educación debe ser un acto de
     category: "recurso",
     title: "Top 5 Webcomics Gratuitos en Inglés Ideales para Mejorar tu Fluidez",
     date: "12 Agosto, 2026",
-    author: "Equipo Let's Do It Together",
+    author: "Club de Lectura Digital",
     readTime: "3 min de lectura",
     excerpt: "Descubre cómo leer historias gráficas ilustradas en tu celular te ayuda a adquirir gramática sin tener que memorizar reglas.",
     content: `
 Los webcomics combinan ilustraciones de alta calidad con diálogos cortos y coloquiales. Son ideales para estudiantes con poco tiempo:
 
-1. Heartstopper: Diálogos cotidianos, vocabulario escolar y oraciones sencillas para nivel A2-B1.
-2. Lore Olympus: Mitología moderna con lenguaje descriptivo y rico para nivel B1-B2.
-3. Sarah's Scribbles: Cómics de 4 viñetas con humor del día a día, perfectos para principiantes absolutos (A1-A2).
-4. Tower of God: Aventura y acción con expresiones de estrategia y diálogo dramático.
-5. Everyday Cuteness: Tiras cómicas con frases de gratitud, amistad y valores.
+1. **Heartstopper:** Diálogos cotidianos, vocabulario escolar y oraciones sencillas para nivel A2-B1.
+2. **Lore Olympus:** Mitología moderna con lenguaje descriptivo y rico para nivel B1-B2.
+3. **Sarah's Scribbles:** Cómics de 4 viñetas con humor del día a día, perfectos para principiantes absolutos (A1-A2).
+4. **Tower of God:** Aventura y acción con expresiones de estrategia y diálogo dramático.
+5. **Everyday Cuteness:** Tiras cómicas con frases de gratitud, amistad y valores.
     `,
     tags: ["Webcomics", "Lectura", "Recursos Gratis", "Autodidacta"],
     imageUrl: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
@@ -731,6 +766,11 @@ body {
   .timeline-item {
     flex-direction: column;
   }
+  .hero-section h2 {
+    font-size: 1.8rem;
+  }
+}`;
+
   .hero-section h2 {
     font-size: 1.8rem;
   }
