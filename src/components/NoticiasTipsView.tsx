@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Markdown from 'react-markdown';
 import { newsAndTips } from '../data/projectData';
 import { NewsTip } from '../types';
 import { 
@@ -234,8 +235,21 @@ export const NoticiasTipsView: React.FC = () => {
               </div>
             )}
 
-            <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-sm sm:text-base whitespace-pre-line">
-              {activeArticle.content}
+            <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-sm sm:text-base space-y-4">
+              <Markdown
+                components={{
+                  h3: ({ children }) => <h3 className="text-lg sm:text-xl font-black text-slate-900 mt-6 mb-3 flex items-center gap-2">{children}</h3>,
+                  p: ({ children }) => <p className="text-slate-700 leading-relaxed my-2">{children}</p>,
+                  strong: ({ children }) => <strong className="font-bold text-slate-900">{children}</strong>,
+                  ol: ({ children }) => <ol className="list-decimal pl-5 space-y-2 my-3 text-slate-700">{children}</ol>,
+                  ul: ({ children }) => <ul className="list-disc pl-5 space-y-2 my-3 text-slate-700">{children}</ul>,
+                  li: ({ children }) => <li className="leading-relaxed pl-1">{children}</li>,
+                  code: ({ children }) => <code className="bg-slate-100 text-sky-700 font-mono text-xs px-2 py-0.5 rounded border border-slate-200">{children}</code>,
+                  hr: () => <hr className="my-6 border-slate-200" />
+                }}
+              >
+                {activeArticle.content}
+              </Markdown>
             </div>
 
             <div className="p-4 bg-sky-50 rounded-2xl border border-sky-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-sky-900">
