@@ -92,7 +92,7 @@ export const ContenidoSemanalView: React.FC = () => {
                   Entrega {week.weekNumber}
                 </span>
                 <span className="font-bold text-sm sm:text-base mt-1">
-                  {week.weekNumber === 1 ? 'Semana 1' : `Semana ${week.weekNumber}: ¿?`}
+                  {week.weekNumber <= 2 ? `Semana ${week.weekNumber}` : `Semana ${week.weekNumber}: ¿?`}
                 </span>
               </button>
             );
@@ -129,7 +129,7 @@ export const ContenidoSemanalView: React.FC = () => {
             )}
 
             <p className="text-slate-700 text-base leading-relaxed">
-              {selectedWeek.weekNumber === 1 
+              {selectedWeek.weekNumber <= 2 
                 ? selectedWeek.description 
                 : "Esta entrega aún no ha sido solicitada. La información correspondiente a esta semana se añadirá una vez sea asignada por el docente."}
             </p>
@@ -165,7 +165,7 @@ export const ContenidoSemanalView: React.FC = () => {
               <div className="space-y-3">
                 <span className="text-xs font-bold text-sky-400 bg-sky-950/80 px-3 py-1.5 rounded-lg border border-sky-800/80 inline-flex items-center gap-1.5">
                   <Globe className="w-3.5 h-3.5" />
-                  Evidencia Gráfica
+                  Evidencia Gráfica • Semana 1
                 </span>
                 <h3 className="text-xl font-bold text-white">
                   Sitio Web del Proyecto
@@ -184,6 +184,34 @@ export const ContenidoSemanalView: React.FC = () => {
                   <li>Inicio con descripción e historia de la idea</li>
                   <li>Contenido semanal estructurado</li>
                   <li>Sección de noticias, tips y recursos</li>
+                </ul>
+              </div>
+            </>
+          ) : selectedWeek.weekNumber === 2 ? (
+            <>
+              <div className="space-y-3">
+                <span className="text-xs font-bold text-emerald-400 bg-emerald-950/80 px-3 py-1.5 rounded-lg border border-emerald-800/80 inline-flex items-center gap-1.5">
+                  <Globe className="w-3.5 h-3.5" />
+                  Evidencia Gráfica • Semana 2
+                </span>
+                <h3 className="text-xl font-bold text-white">
+                  Sección de Noticias y Referencia Dialnet
+                </h3>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  Evidencia de actualización del sitio: creación de la sección de noticias con investigación indexada en Dialnet (Cód. 8722118) sobre herramientas interactivas en grado 11.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-800/70 border border-slate-700 space-y-2.5 text-xs text-slate-300">
+                <div className="font-semibold text-emerald-300 flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-400" />
+                  Entregables logrados en Semana 2:
+                </div>
+                <ul className="space-y-1.5 text-slate-300 list-disc list-inside">
+                  <li>Sección de noticias vinculada a la idea de negocio</li>
+                  <li>Artículo académico de Dialnet referenciado con enlace directo</li>
+                  <li>Diseño estético y menú de navegación optimizado</li>
+                  <li>Organización secuencial de actividades de Semana 1 y 2</li>
                 </ul>
               </div>
             </>
