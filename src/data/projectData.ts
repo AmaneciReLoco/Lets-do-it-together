@@ -1,43 +1,36 @@
-import { BusinessProfile, WeeklyEntry, NewsTip, IcfesQuestion } from '../types';
+import { ProjectInfo, WeeklyEntry, NewsTip, IcfesQuestion } from '../types';
 
-export const businessProfile: BusinessProfile = {
+export const projectInfo: ProjectInfo = {
   name: "Let's Do It Together",
-  slogan: "Aprender inglés nunca fue tan divertido, interactivo y accesible.",
-  author: "Daniel Ricardo Ropero Mantilla",
-  institution: "Corporación Universitaria Minuto de Dios - UNIMINUTO",
-  subject: "Emprendimiento / Proyecto de Negocio",
-  semester: "Formación Académica",
-  city: "San José de Cúcuta, Norte de Santander",
-  year: 2026,
-  mission: "Transformar la enseñanza del inglés en Cúcuta mediante metodologías interactivas, dinámicas y contextualizadas con series, música y cómics en inglés, inspirados en principios de solidaridad, fe y servicio para que jóvenes y familias alcancen un dominio fluido y mejores oportunidades de vida.",
-  vision: "Para el 2030, consolidarnos como la academia y plataforma comunitaria líder en educación bilingüe alternativa e interactiva en la región fronteriza, destacada por sus altos puntajes en pruebas Saber 11 y su impacto social positivo.",
-  objectives: [
-    "Diseñar una metodología de inmersión lúdica a través de contenidos del entretenimiento (series, canciones, cómics y clubes de conversación).",
-    "Brindar preparación estratégica para las pruebas de Estado (ICFES Saber 11) enfocada en estudiantes de colegios oficiales y privados.",
-    "Fomentar una comunidad de aprendizaje colaborativo basada en valores cristianos de apoyo mutuo, empatía, perseverancia y excelencia.",
-    "Ofrecer tarifas solidarias y becas de impacto social para jóvenes talentosos de escasos recursos en la ciudad de Cúcuta."
+  slogan: "Aprende inglés de forma natural, dinámica y con propósito",
+  city: "Cúcuta",
+  country: "Colombia",
+  introduction: "La idea de este proyecto surge de una realidad evidente en nuestra ciudad de Cúcuta, Colombia, donde el sistema educativo tradicional suele fallar en la enseñanza del inglés, dejando a muchos jóvenes sin dominar el idioma. Esta deficiencia se refleja claramente a nivel nacional en las pruebas ICFES, donde la materia de inglés registra de forma constante los promedios más bajos, limitando el futuro académico y laboral de los estudiantes.",
+  historyAndOrigin: "El nombre de nuestra empresa será \"Let's Do It Together\", y nace del deseo de compartir los conocimientos que Dios nos ha dado y que nosotros mismos adquirimos de manera natural y divertida. En lugar de depender de métodos rígidos y aburridos, aprendimos el idioma viendo series y películas, escuchando canciones y leyendo webcomics, descubriendo que el inglés se asimila mejor cuando se conecta con lo que nos apasiona.",
+  reasonWhy: "Hemos elegido esta idea de negocio porque queremos transformar esa frustración común en una oportunidad real para los jóvenes cucuteños. Buscamos demostrar que aprender inglés no tiene que ser una carga escolar pesada, sino una experiencia accesible y dinámica, guiada por principios cristianos de servicio, donde juntos podamos superar las barreras del idioma y abrir puertas hacia nuevas oportunidades.",
+  macroObjective: "Posicionar a \"Let's Do It Together\" en Cúcuta como una academia de inglés innovadora y accesible, ayudando a los jóvenes a superar las deficiencias del sistema tradicional mediante métodos dinámicos de inmersión cultural para mejorar su rendimiento académico y sus oportunidades de bilingüismo.",
+  specificObjectives: [
+    "Implementar metodologías de enseñanza basadas en recursos cotidianos y de entretenimiento (como series, música y lectura) para hacer el aprendizaje más natural y efectivo.",
+    "Apoyar a los estudiantes en su preparación académica, enfocándonos en elevar los puntajes de la prueba ICFES en el área de inglés.",
+    "Crear una comunidad de aprendizaje basada en el apoyo mutuo y principios cristianos, donde cada estudiante se sienta motivado a perder el miedo a hablar."
   ],
-  targetAudience: "Niños, adolescentes, estudiantes de grado 10 y 11 próximos a presentar las pruebas Saber 11, universitarios y adultos que buscan aprender inglés sin el aburrimiento de la enseñanza tradicional de gramática rígida.",
-  valueProposition: "No enseñamos inglés con libros aburridos. Enseñamos inglés viviendo el idioma a través de lo que amas: tus series favoritas subtituladas de forma pedagógica, la música en inglés que escuchas a diario, cómics interactivos y un ambiente cálido de hermandad y valores.",
-  christianValues: [
-    "Amor y Servicio al Prójimo: Enseñar con paciencia y empatía a cada estudiante.",
-    "Integridad y Honestidad: Compromiso real con el progreso pedagógico de cada alumno.",
-    "Perseverancia y Fe: Motivar a los alumnos a no rendirse ante las dificultades del bilingüismo.",
-    "Solidaridad Comunitaria: Acceso equitativo a la educación bilingüe como motor de superación."
-  ]
+  mission: "La misión de 'Let's Do It Together' es transformar la enseñanza del inglés en Cúcuta mediante metodologías dinámicas inspiradas en el entretenimiento y el aprendizaje natural, brindando un espacio guiado por valores cristianos y de servicio para que los jóvenes dominen el idioma y superen las brechas educativas actuales.",
+  vision: "Ser para el año 2031 la academia de inglés líder en Cúcuta y reconocida en la región por su enfoque innovador y empírico, destacándonos por elevar el nivel de bilingüismo de los jóvenes y formar una comunidad sólida de estudiantes preparados para competir en un mundo globalizado."
 };
 
 export const weeklyEntries: WeeklyEntry[] = [
   {
+    id: "semana-1",
     weekNumber: 1,
-    title: "Semana 1: Planteamiento de la Idea de Negocio y Diagnóstico Regional",
-    subtitle: "Nacimiento de 'Let's Do It Together' y justificación en Cúcuta",
-    description: "Durante la primera semana se estructuró la identidad y fundamentación del proyecto educativo: análisis del bajo nivel de inglés en la región nororiental de Colombia, definición del público objetivo y estructuración de la propuesta de valor basada en entretenimiento pedagógico.",
-    date: "Semana 1 • Lanzamiento",
-    tags: ["Diagnóstico", "Propuesta de Valor", "Misión & Visión", "Cúcuta"],
+    title: "Semana 1: Planteamiento de la Idea y Diagnóstico Inicial",
+    subtitle: "Justificación de la idea de negocio y análisis de la situación en Cúcuta",
+    description: "En esta primera entrega se definió la base del proyecto 'Let's Do It Together'. Analizamos el problema del bajo nivel de inglés en los colegios de Cúcuta y los resultados en las pruebas ICFES, justificando por qué un método basado en gustos e intereses personales es una alternativa real frente a la enseñanza tradicional.",
+    date: "Semana 1 • Entrega Inicial",
+    tags: ["Idea de Negocio", "Diagnóstico Cúcuta", "Justificación", "ICFES"],
     highlights: [
-      "Identificación de la problemática: altos índices de deserción en academias tradicionales por clases monótonas.",
-      "Definición de las 4 líneas metodológicas: Series TV, Música, Webcomics y Preparación Saber 11.",
+      "Definición del nombre e identidad del proyecto: 'Let's Do It Together'.",
+      "Redacción de la introducción, justificación y problemática en la ciudad de Cúcuta.",
+      "Formulación de los objetivos generales y específicos del proyecto.",
       "Planteamiento de la misión y visión con valores de apoyo mutuo y servicio cristiano."
     ],
     imageUrl: "",
@@ -45,6 +38,7 @@ export const weeklyEntries: WeeklyEntry[] = [
     multimediaType: "series"
   },
   {
+    id: "semana-2",
     weekNumber: 2,
     title: "Semana 2: Creación de Sección de Noticias, Referenciación y Actualización Web",
     subtitle: "Investigación en Dialnet sobre herramientas digitales y diseño de la sección de noticias",
@@ -62,6 +56,7 @@ export const weeklyEntries: WeeklyEntry[] = [
     multimediaType: "music"
   },
   {
+    id: "semana-3",
     weekNumber: 3,
     title: "Semana 3: ¿?",
     subtitle: "¿?",
@@ -71,9 +66,10 @@ export const weeklyEntries: WeeklyEntry[] = [
     highlights: [],
     imageUrl: "",
     imageAlt: "¿?",
-    multimediaType: "comics"
+    multimediaType: "webcomic"
   },
   {
+    id: "semana-4",
     weekNumber: 4,
     title: "Semana 4: ¿?",
     subtitle: "¿?",
@@ -83,7 +79,7 @@ export const weeklyEntries: WeeklyEntry[] = [
     highlights: [],
     imageUrl: "",
     imageAlt: "¿?",
-    multimediaType: "christian"
+    multimediaType: "icfes"
   }
 ];
 
@@ -122,175 +118,186 @@ Este artículo académico valida científicamente el pilar de nuestra academia: 
     id: "tip-1",
     category: "tip",
     title: "5 Técnicas para Aprender Inglés Viendo tus Series Favoritas sin Frustrarte",
-    date: "18 Agosto, 2026",
-    author: "Daniel Ropero",
+    date: "20 Agosto, 2026",
+    author: "Equipo Let's Do It Together",
     readTime: "4 min de lectura",
-    excerpt: "Descubre cómo pasar del audio en español con subtítulos al inglés con subtítulos en inglés, y cómo tomar notas de expresiones idiomáticas cotidianas.",
+    excerpt: "¿Subtítulos en español, en inglés o sin subtítulos? Te enseñamos el método de 3 pasos que usamos en nuestra academia para pasar de principiante a fluido con series de Netflix y streaming.",
     content: `
-Aprender inglés viendo series es uno de los métodos más efectivos para adquirir vocabulario natural y entrenar el oído al ritmo real de los hablantes nativos. Sigue estos 5 pasos:
+Aprender con series no significa solo sentarse a ver maratones pasivamente; requiere una técnica activa pero divertida:
 
-1. **La regla de las 3 fases:**
-   - Fase 1: Audio en inglés + Subtítulos en español (solo los primeros 2 capítulos para entender la trama).
-   - Fase 2: Audio en inglés + Subtítulos en inglés (la fase dorada para asociar fonética y ortografía).
-   - Fase 3: Audio en inglés SIN subtítulos (para entrenar tu listening real).
-
-2. **Repite en voz alta (Shadowing):**
-   Cuando un personaje diga una frase corta y expresiva ("No way!", "What are you up to?"), pausa y repítela imitando su entonación y emoción.
-
-3. **Ten tu libreta de 'Slang':**
-   No anotes cada palabra desconocida porque te aburrirás. Anota solo aquellas frases que se repitan con frecuencia en los diálogos.
-
-4. **Series recomendadas por nivel:**
-   - Principiante/Intermedio: *Friends*, *Modern Family*, *The Good Place*.
-   - Intermedio alto: *Stranger Things*, *Brooklyn Nine-Nine*.
-
-5. **Disfruta el proceso:**
-   No lo veas como una clase obligatoria; velo como tu momento de entretenimiento en otro idioma.
+1. **Paso 1: Audio en inglés con subtítulos en inglés (CC):** Evita subtítulos en español porque tu cerebro leerá en español e ignorará el audio en inglés. Al leer en inglés mientras escuchas, asocias la ortografía con los fonemas reales.
+2. **Paso 2: La técnica del 'Shadowing' (Eco Vocal):** Elige una escena corta de 2 minutos. Pausa después de cada frase de tu personaje favorito y repítela imitando su entonación, ritmo y emoción.
+3. **Paso 3: El cuaderno de expresiones vivas:** Anota frases completas que te gusten (ej: "I've got your back" en vez de solo traducir "back = espalda").
+4. **Paso 4: Repite el episodio sin subtítulos:** Te sorprenderá notar cómo tu oído ahora caza palabras que antes sonaban como un solo murmullo.
     `,
-    tags: ["Series TV", "Listening", "Shadowing", "Tips"],
-    imageUrl: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=800&q=80"
+    tags: ["Series", "Pronunciación", "Método Natural", "Tips"],
+    imageUrl: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: "icfes-1",
+    id: "icfes-hack",
     category: "icfes",
-    title: "Estrategia Clave para la Prueba Saber 11: Cómo responder la Parte 1 y 2 sin equivocarse",
-    date: "14 Agosto, 2026",
-    author: "Equipo Pedagógico Let's Do It Together",
+    title: "Estrategias Clave para Sacar más de 75 Puntos en el ICFES de Inglés en Cúcuta",
+    date: "18 Agosto, 2026",
+    author: "Tutoría Académica Saber 11",
     readTime: "6 min de lectura",
-    excerpt: "Guía práctica para dominar avisos publicitarios y descripciones de palabras en el examen de Estado ICFES.",
+    excerpt: "Desglosamos las 7 partes de la prueba de inglés del ICFES. Conoce las trampas más comunes en avisos públicos, diálogos cortos y comprensión de lectura.",
     content: `
-La prueba de inglés del ICFES Saber 11 consta de 7 partes que evalúan desde vocabulario básico hasta lectura crítica inferencial. En esta entrega analizamos las dos primeras:
+La prueba de inglés del ICFES no busca que seas un diccionario andante, sino que entiendas la función comunicativa del idioma:
 
-### Parte 1: Avisos y Ubicación Contextual
-En esta sección te muestran avisos o letreros cortos y debes responder ¿dónde los verías? (ej: in a library, in a hospital, on a bus).
-- **Tip Pro:** Identifica las palabras clave de advertencia o instrucción (*Silence, Do not touch, Fasten seatbelt, Turn off cellphones*).
-- **Cuidado con las trampas:** Las opciones suelen incluir lugares relacionados, pero solo uno tiene sentido lógico con la acción solicitada.
-
-### Parte 2: Emparejamiento de Definiciones
-Se presentan 5 definiciones y una lista de 8 palabras (3 son distractores).
-- **Estrategia:** Lee primero las 8 palabras para tener el campo semántico en mente. Luego lee cada definición buscando el sustantivo principal.
-- **Descarte sistemático:** Marca las que estés 100% seguro primero para reducir las opciones de las más difíciles.
+- **Parte 1 (Avisos de señalización):** Fíjate en los lugares (Hospital, Airport, Street). Identifica palabras clave de peligro, instrucción o prohibición (No parking, Danger, Please wash hands).
+- **Parte 2 (Emparejamiento de definiciones):** Lee primero las opciones de la A a la H y luego busca palabras clave en cada enunciado.
+- **Parte 3 (Conversaciones cortas):** Responde según la cortesía y la intención social, no de forma literal.
+- **Parte 4 (Gramática y vocabulario en textos):** Revisa las palabras antes y después del espacio para deducir si falta una preposición, un conector o un verbo.
+- **Parte 7 (Textos complejos):** Lee las preguntas antes que el texto para saber qué información específica estás rastreando.
     `,
-    tags: ["Saber 11", "ICFES", "Consejos de Examen", "Gramática"],
+    tags: ["ICFES", "Saber 11", "Técnicas de Examen", "Cúcuta"],
     imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: "noticia-1",
+    id: "noticia-cucuta",
     category: "noticia",
-    title: "Norte de Santander avanza en programas de bilingüismo para la juventud",
-    date: "10 Agosto, 2026",
-    author: "Redacción Comunitaria",
-    readTime: "3 min de lectura",
-    excerpt: "Iniciativas ciudadanas y educativas buscan cerrar la brecha de dominio del idioma extranjero en los municipios fronterizos.",
+    title: "La Brecha del Bilingüismo en Norte de Santander: Un Desafío que Podemos Vencer Juntos",
+    date: "15 Agosto, 2026",
+    author: "Redacción Educativa Cúcuta",
+    readTime: "5 min de lectura",
+    excerpt: "Los informes recientes revelan la urgencia de métodos pedagógicos modernos en la frontera para brindar oportunidades de empleo remoto y becas internacionales a nuestros jóvenes.",
     content: `
-En Cúcuta y el área metropolitana, el interés de los jóvenes por aprender un segundo idioma ha crecido exponencialmente gracias al auge del trabajo remoto, el desarrollo de software y las oportunidades de becas internacionales.
+Cúcuta es una ciudad con un potencial inmenso de talento juvenil y creatividad. Sin embargo, el acceso a academias de idiomas tradicionales con mensualidades elevadas y metodologías monótonas ha dejado atrás a miles de estudiantes talentosos.
 
-La academia *Let's Do It Together* se suma a este movimiento ofreciendo espacios accesibles con metodologías que rompen con los esquemas rígidos tradicionales, apostando por el arte, la música y la tecnología como canales de enseñanza.
+En **Let's Do It Together** creemos firmemente que la educación debe ser un acto de amor y servicio cristiano. Al romper con el molde anticuado de copiar tablas gramaticales en un cuaderno y conectar a los muchachos con la cultura viva del idioma, el inglés pasa de ser 'la materia que se pierde' a ser la herramienta que transforma vidas.
     `,
-    tags: ["Cúcuta", "Bilingüismo", "Oportunidades", "Comunidad"],
-    imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+    tags: ["Educación", "Frontera", "Oportunidades", "Impacto Social"],
+    imageUrl: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: "recurso-1",
+    id: "recurso-webcomics",
     category: "recurso",
-    title: "Biblioteca de Canciones en Inglés con Letra Sincronizada para Entrenar la Pronunciación",
-    date: "5 Agosto, 2026",
-    author: "Daniel Ropero",
-    readTime: "5 min de lectura",
-    excerpt: "Lista curada de baladas, pop y música cristiana contemporánea con pronunciación clara para practicar fonética.",
+    title: "Top 5 Webcomics Gratuitos en Inglés Ideales para Mejorar tu Fluidez",
+    date: "12 Agosto, 2026",
+    author: "Club de Lectura Digital",
+    readTime: "3 min de lectura",
+    excerpt: "Descubre cómo leer historias gráficas ilustradas en tu celular te ayuda a adquirir gramática sin tener que memorizar reglas.",
     content: `
-Cantar en inglés ayuda a desarrollar la memoria muscular necesaria para los sonidos que no existen en español (como la 'th', la 'v' labiodental o las vocales cortas).
+Los webcomics combinan ilustraciones de alta calidad con diálogos cortos y coloquiales. Son ideales para estudiantes con poco tiempo:
 
-### Lista de canciones recomendadas por claridad de dicción:
-1. **Easy on Me - Adele:** Excelente para vocales abiertas y entonación.
-2. **Count on Me - Bruno Mars:** Vocabulario cotidiano y ritmo moderado.
-3. **Goodness of God - Bethel Music / CeCe Winans:** Pronunciación limpia, ritmo pausado y mensaje inspirador de fe y gratitud.
-4. **Yellow - Coldplay:** Ideal para asociar frases compuestas y rimas naturales.
-5. **10,000 Reasons - Matt Redman:** Letra accesible con estructuras gramaticales en presente y futuro.
+1. **Heartstopper:** Diálogos cotidianos, vocabulario escolar y oraciones sencillas para nivel A2-B1.
+2. **Lore Olympus:** Mitología moderna con lenguaje descriptivo y rico para nivel B1-B2.
+3. **Sarah's Scribbles:** Cómics de 4 viñetas con humor del día a día, perfectos para principiantes absolutos (A1-A2).
+4. **Tower of God:** Aventura y acción con expresiones de estrategia y diálogo dramático.
+5. **Everyday Cuteness:** Tiras cómicas con frases de gratitud, amistad y valores.
     `,
-    tags: ["Música", "Pronunciación", "Canciones", "Recursos"],
-    imageUrl: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80"
+    tags: ["Webcomics", "Lectura", "Recursos Gratis", "Autodidacta"],
+    imageUrl: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
-export const icfesSimuladorQuestions: IcfesQuestion[] = [
+export const icfesQuizQuestions: IcfesQuestion[] = [
   {
     id: 1,
-    part: 1,
-    title: "Parte 1: ¿Dónde puedes ver estos avisos?",
-    instruction: "¿Dónde puedes ver este aviso?",
-    context: "SILENCE PLEASE - EXAM IN PROGRESS",
-    question: "¿En qué lugar encontrarías este anuncio?",
+    context: "¿Dónde puedes ver este aviso? -> 'PLEASE DO NOT FEED THE ANIMALS'",
+    question: "Where can you see this notice?",
     options: [
-      { letter: "A", text: "In a park" },
-      { letter: "B", text: "In a school library or classroom" },
-      { letter: "C", text: "In a supermarket" }
+      "In a zoo or nature park",
+      "In a library",
+      "In a computer store"
     ],
-    correctAnswer: "B",
-    explanation: "El aviso pide silencio por un examen en curso ('Exam in progress'), lo cual es propio de un aula escolar o una biblioteca.",
-    tipForSaber11: "Busca palabras contextuales como 'Silence' o 'Exam' que delimitan el lugar inmediatamente."
+    correctIndex: 0,
+    explanation: "El aviso 'Por favor no alimentar a los animales' se encuentra típicamente en zoológicos o reservas naturales (zoo / nature park)."
   },
   {
     id: 2,
-    part: 1,
-    title: "Parte 1: ¿Dónde puedes ver estos avisos?",
-    instruction: "¿Dónde puedes ver este aviso?",
-    context: "PLEASE FASTEN YOUR SEATBELT WHILE SEATED",
-    question: "¿Dónde es más probable que veas esta instrucción?",
+    context: "Conversación cotidiana en inglés",
+    question: "Tom: 'I passed my English exam with the highest score!' — Mary: '_______'",
     options: [
-      { letter: "A", text: "On an airplane or bus" },
-      { letter: "B", text: "In a clothing shop" },
-      { letter: "C", text: "In a swimming pool" }
+      "Never mind, try again tomorrow.",
+      "Congratulations! I knew you could do it!",
+      "I am so sorry to hear that."
     ],
-    correctAnswer: "A",
-    explanation: "'Seatbelt' significa cinturón de seguridad. Se utiliza en medios de transporte como aviones o autobuses.",
-    tipForSaber11: "Aprende el vocabulario básico de seguridad en viajes (seatbelt, emergency exit, luggage)."
+    correctIndex: 1,
+    explanation: "Ante una buena noticia académica de un compañero ('Pasé mi examen de inglés con la nota más alta'), la respuesta adecuada y cortés es felicitarlo ('Congratulations! I knew you could do it!')."
   },
   {
     id: 3,
-    part: 2,
-    title: "Parte 2: Emparejamiento de Definiciones",
-    instruction: "Lea las descripciones y seleccione la palabra correcta.",
-    question: "A person who helps people and treats them when they are sick in a hospital.",
+    context: "Completar la frase con la preposición y tiempo verbal correcto",
+    question: "At 'Let's Do It Together', we believe learning English is easier when you practice _____ music and movies every day.",
     options: [
-      { letter: "A", text: "Teacher" },
-      { letter: "B", text: "Doctor" },
-      { letter: "C", text: "Engineer" }
+      "with",
+      "at",
+      "for"
     ],
-    correctAnswer: "B",
-    explanation: "'Treats them when they are sick' (los atiende cuando están enfermos) corresponde a la profesión de un Doctor o Médico.",
-    tipForSaber11: "En la Parte 2 del ICFES, busca los verbos clave de la acción ('helps', 'treats', 'sick')."
+    correctIndex: 0,
+    explanation: "Usamos la preposición 'with' para indicar la compañía o el medio que acompaña la acción ('practicar con música y películas')."
   },
   {
     id: 4,
-    part: 3,
-    title: "Parte 3: Conversaciones Cortas",
-    instruction: "Complete la conversación cotidiana seleccionando la respuesta más adecuada.",
-    context: "Person 1: 'Can you lend me your dictionary for the English class?'",
-    question: "¿Cuál es la respuesta más natural y educada?",
+    context: "Comprensión de lectura corta",
+    question: "Why does 'Let's Do It Together' use entertainment like series and webcomics?",
     options: [
-      { letter: "A", text: "Sure, here you are!" },
-      { letter: "B", text: "I am twelve years old." },
-      { letter: "C", text: "Yesterday morning." }
+      "Because grammar books are too expensive to print.",
+      "Because students learn more naturally when connected to things they enjoy.",
+      "Because students only want to play video games in class."
     ],
-    correctAnswer: "A",
-    explanation: "'Sure, here you are!' es la respuesta cortés en inglés para decir '¡Claro, aquí tienes!' al prestar algo.",
-    tipForSaber11: "Identifica la intención comunicativa: pedir un favor requiere una aceptación amable o una excusa educada."
+    correctIndex: 1,
+    explanation: "Nuestra metodología se fundamenta en que el idioma se asimila mejor cuando se conecta con lo que apasiona al estudiante de forma natural y divertida."
+  }
+];
+
+export const sampleSongs = [
+  {
+    id: "song-1",
+    title: "Count on Me",
+    artist: "Bruno Mars",
+    theme: "Amistad y Apoyo Mutuo",
+    difficulty: "Fácil (A1 - A2)",
+    sampleLyricEn: "You can count on me like one, two, three / I'll be there...",
+    sampleLyricEs: "Puedes contar conmigo como uno, dos, tres / Allí estaré...",
+    keyVocabulary: ["Count on (Contar con alguien)", "Be there (Estar presente / apoyar)", "Find out (Descubrir)"]
   },
   {
-    id: 5,
-    part: 4,
-    title: "Parte 4: Texto con Espacios (Gramática y Conectores)",
-    instruction: "Elija la opción gramatical correcta para completar la oración.",
-    context: "If you practice every day with TV series and music, you _______ improve your fluency faster.",
-    question: "¿Qué forma verbal completa correctamente el primer condicional?",
-    options: [
-      { letter: "A", text: "will" },
-      { letter: "B", text: "would have" },
-      { letter: "C", text: "are" }
-    ],
-    correctAnswer: "A",
-    explanation: "Estructura del primer condicional: If + Presente Simple (practice), Cláusula principal con WILL + Verbo en forma base (will improve).",
-    tipForSaber11: "Revisa siempre la regla del First Conditional: If + Present, Will + Infinitive."
+    id: "song-2",
+    title: "What a Wonderful World",
+    artist: "Louis Armstrong",
+    theme: "Apreciación y Esperanza",
+    difficulty: "Intermedio (A2 - B1)",
+    sampleLyricEn: "I see trees of green, red roses too / I see them bloom for me and you...",
+    sampleLyricEs: "Veo árboles verdes, rosas rojas también / Las veo florecer para ti y para mí...",
+    keyVocabulary: ["Bloom (Florecer)", "Wonderful (Maravilloso)", "Bright (Brillante / radiante)"]
+  },
+  {
+    id: "song-3",
+    title: "You've Got a Friend in Me",
+    artist: "Randy Newman (Toy Story)",
+    theme: "Lealtad y Superación de Obstáculos",
+    difficulty: "Intermedio (B1)",
+    sampleLyricEn: "When the road looks rough ahead / And you're miles and miles from your nice warm bed...",
+    sampleLyricEs: "Cuando el camino se vea difícil adelante / Y estés a millas y millas de tu cama cálida...",
+    keyVocabulary: ["Rough (Áspero / difícil)", "Ahead (Adelante / en el futuro)", "Miles away (A kilómetros de distancia)"]
+  }
+];
+
+export const sampleSeriesScenes = [
+  {
+    id: "scene-1",
+    show: "Stranger Things",
+    level: "A2 - B1",
+    phrase: "“Friends don't lie.”",
+    context: "Eleven estableciendo la regla dorada de confianza con sus amigos.",
+    grammarNote: "Presente simple en negativo ('don't + verbo base'). Una estructura elemental del ICFES."
+  },
+  {
+    id: "scene-2",
+    show: "Spider-Man: Into the Spider-Verse",
+    level: "B1",
+    phrase: "“It's a leap of faith. That's all it is, Miles.”",
+    context: "Peter Parker animando a Miles Morales a dar el paso decisivo sin tener miedo a equivocarse.",
+    grammarNote: "Modismo idiomático 'Leap of faith' (Salto de fe / confiar a pesar de la incertidumbre)."
+  },
+  {
+    id: "scene-3",
+    show: "Brooklyn Nine-Nine",
+    level: "B1 - B2",
+    phrase: "“Cool, cool, cool, no doubt, no doubt!”",
+    context: "Jake Peralta expresando acuerdo enfático en lenguaje informal estadounidense.",
+    grammarNote: "Uso de 'no doubt' (sin duda) para concordancia en diálogos orales fluidos."
   }
 ];
