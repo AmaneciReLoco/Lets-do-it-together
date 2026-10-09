@@ -10,6 +10,8 @@ export interface ProjectInfo {
   specificObjectives: string[];
   mission: string;
   vision: string;
+  instagramUrl?: string;
+  instagramHandle?: string;
 }
 
 export interface WeeklyEntry {
