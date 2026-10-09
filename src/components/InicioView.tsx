@@ -239,10 +239,10 @@ export const InicioView: React.FC<InicioViewProps> = ({ onNavigateToWeeks }) => 
               Avance de la Semana 4 • Redes Sociales Oficiales
             </div>
             <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-              ¡Aprende inglés a diario con nosotros en Instagram!
+              ¡Aprende inglés con nosotros en Instagram!
             </h2>
             <p className="text-white/90 text-sm sm:text-base leading-relaxed">
-              En nuestra cuenta oficial <strong className="text-amber-200">@lets_do_it.together</strong> compartimos reels de pronunciación con películas, vocabulario clave con canciones, y dinámicas rápidas para el ICFES de inglés.
+              En nuestra cuenta oficial <strong className="text-amber-200">@lets_do_it.together</strong> compartimos reels de pronunciación con películas y vocabulario clave para aprender de forma natural.
             </p>
           </div>
 
