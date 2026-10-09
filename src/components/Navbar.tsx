@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Calendar, Newspaper, HeartHandshake } from 'lucide-react';
+import { BookOpen, Calendar, Newspaper, HeartHandshake, Instagram } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: 'inicio' | 'semanas' | 'noticias';
@@ -34,47 +34,62 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             </div>
           </div>
 
-          {/* Navegación por pestañas (Las 3 entradas solicitadas) */}
-          <nav className="flex items-center gap-1 bg-slate-100/80 p-1.5 rounded-xl border border-slate-200/70">
-            <button
-              id="nav-tab-inicio"
-              onClick={() => setActiveTab('inicio')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
-                activeTab === 'inicio'
-                  ? 'bg-white text-sky-700 shadow-xs'
-                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
-              }`}
-            >
-              <HeartHandshake className="w-4 h-4" />
-              1. Inicio
-            </button>
+          <div className="flex items-center gap-3">
+            {/* Navegación por pestañas (Las 3 entradas solicitadas) */}
+            <nav className="flex items-center gap-1 bg-slate-100/80 p-1.5 rounded-xl border border-slate-200/70">
+              <button
+                id="nav-tab-inicio"
+                onClick={() => setActiveTab('inicio')}
+                className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                  activeTab === 'inicio'
+                    ? 'bg-white text-sky-700 shadow-xs'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
+                }`}
+              >
+                <HeartHandshake className="w-4 h-4" />
+                1. Inicio
+              </button>
 
-            <button
-              id="nav-tab-semanas"
-              onClick={() => setActiveTab('semanas')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
-                activeTab === 'semanas'
-                  ? 'bg-white text-sky-700 shadow-xs'
-                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
-              }`}
-            >
-              <Calendar className="w-4 h-4" />
-              2. Contenido Semanal
-            </button>
+              <button
+                id="nav-tab-semanas"
+                onClick={() => setActiveTab('semanas')}
+                className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                  activeTab === 'semanas'
+                    ? 'bg-white text-sky-700 shadow-xs'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
+                }`}
+              >
+                <Calendar className="w-4 h-4" />
+                2. Contenido Semanal
+              </button>
 
-            <button
-              id="nav-tab-noticias"
-              onClick={() => setActiveTab('noticias')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
-                activeTab === 'noticias'
-                  ? 'bg-white text-sky-700 shadow-xs'
-                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
-              }`}
+              <button
+                id="nav-tab-noticias"
+                onClick={() => setActiveTab('noticias')}
+                className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                  activeTab === 'noticias'
+                    ? 'bg-white text-sky-700 shadow-xs'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
+                }`}
+              >
+                <Newspaper className="w-4 h-4" />
+                3. Noticias & Tips
+              </button>
+            </nav>
+
+            {/* Enlace Oficial a Instagram */}
+            <a
+              href="https://www.instagram.com/lets_do_it.together/"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="nav-instagram-link"
+              className="hidden lg:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 hover:from-pink-600 hover:to-amber-600 text-white shadow-xs hover:shadow-md hover:scale-105 transition-all"
+              title="Síguenos en Instagram @lets_do_it.together"
             >
-              <Newspaper className="w-4 h-4" />
-              3. Noticias & Tips
-            </button>
-          </nav>
+              <Instagram className="w-4 h-4" />
+              <span>@lets_do_it.together</span>
+            </a>
+          </div>
         </div>
 
         {/* Barra móvil de navegación secundaria */}
@@ -106,6 +121,16 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             <Newspaper className="w-4 h-4" />
             <span>Noticias & Tips</span>
           </button>
+          <a
+            href="https://www.instagram.com/lets_do_it.together/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-1 text-xs font-semibold py-1 px-2 rounded-lg text-pink-600"
+            title="Instagram"
+          >
+            <Instagram className="w-4 h-4" />
+            <span>Instagram</span>
+          </a>
         </div>
       </div>
     </header>
