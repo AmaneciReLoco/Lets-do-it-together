@@ -17,7 +17,8 @@ import {
   ChevronRight,
   Lightbulb,
   Globe,
-  Layout
+  Layout,
+  Instagram
 } from 'lucide-react';
 
 export const ContenidoSemanalView: React.FC = () => {
@@ -92,7 +93,7 @@ export const ContenidoSemanalView: React.FC = () => {
                   Entrega {week.weekNumber}
                 </span>
                 <span className="font-bold text-sm sm:text-base mt-1">
-                  {week.weekNumber <= 2 ? `Semana ${week.weekNumber}` : `Semana ${week.weekNumber}: ¿?`}
+                  {week.weekNumber <= 2 || week.weekNumber === 4 ? `Semana ${week.weekNumber}` : `Semana ${week.weekNumber}: ¿?`}
                 </span>
               </button>
             );
@@ -129,7 +130,7 @@ export const ContenidoSemanalView: React.FC = () => {
             )}
 
             <p className="text-slate-700 text-base leading-relaxed">
-              {selectedWeek.weekNumber <= 2 
+              {selectedWeek.weekNumber <= 2 || selectedWeek.weekNumber === 4
                 ? selectedWeek.description 
                 : "Esta entrega aún no ha sido solicitada. La información correspondiente a esta semana se añadirá una vez sea asignada por el docente."}
             </p>
@@ -213,6 +214,49 @@ export const ContenidoSemanalView: React.FC = () => {
                   <li>Diseño estético y menú de navegación optimizado</li>
                   <li>Organización secuencial de actividades de Semana 1 y 2</li>
                 </ul>
+              </div>
+            </>
+          ) : selectedWeek.weekNumber === 4 ? (
+            <>
+              <div className="space-y-3">
+                <span className="text-xs font-bold text-pink-400 bg-pink-950/80 px-3 py-1.5 rounded-lg border border-pink-800/80 inline-flex items-center gap-1.5">
+                  <Instagram className="w-3.5 h-3.5" />
+                  Evidencia Gráfica • Semana 4
+                </span>
+                <h3 className="text-xl font-bold text-white">
+                  Canal Oficial de Instagram
+                </h3>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  Apertura y vinculación oficial de la red social de la academia (@lets_do_it.together) para interacción con la comunidad y difusión pedagógica.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-gradient-to-br from-pink-950/40 via-purple-950/30 to-slate-900 border border-pink-800/50 space-y-3 text-xs text-slate-300">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-pink-300 flex items-center gap-1.5">
+                    <Instagram className="w-4 h-4 text-pink-400" />
+                    @lets_do_it.together
+                  </span>
+                  <span className="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full border border-pink-500/30 font-semibold">
+                    Enlace Oficial
+                  </span>
+                </div>
+                <ul className="space-y-1.5 text-slate-300 list-disc list-inside">
+                  <li>Micro-lecciones diarias de vocabulario</li>
+                  <li>Reels con escenas de series y películas</li>
+                  <li>Preguntas semanales tipo ICFES en historias</li>
+                  <li>Consolidación de noticias y recursos web</li>
+                </ul>
+                <a
+                  href="https://www.instagram.com/lets_do_it.together/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 text-white font-bold hover:opacity-95 transition-all shadow-md text-xs mt-1"
+                >
+                  <Instagram className="w-4 h-4" />
+                  Visitar @lets_do_it.together en Instagram
+                  <ExternalLink className="w-3.5 h-3.5 ml-0.5" />
+                </a>
               </div>
             </>
           ) : (
