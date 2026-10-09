@@ -68,17 +68,22 @@ export const weeklyEntries: WeeklyEntry[] = [
     imageAlt: "¿?",
     multimediaType: "webcomic"
   },
-  {
+ {
     id: "semana-4",
     weekNumber: 4,
-    title: "Semana 4: ¿?",
-    subtitle: "¿?",
-    description: "¿?",
-    date: "Semana 4 • Pendiente",
-    tags: ["¿?"],
-    highlights: [],
-    imageUrl: "",
-    imageAlt: "¿?",
+    title: "Semana 4: Lanzamiento de Redes Sociales (Instagram) y Consolidación de Noticias",
+    subtitle: "Apertura del canal oficial en Instagram (@lets_do_it.together) y dinamización comunitaria",
+    description: "Para la cuarta entrega se realizó la apertura y vinculación oficial de las redes sociales del proyecto a través de nuestra cuenta de Instagram (@lets_do_it.together), creando un canal directo de interacción comunitaria, micro-lecciones de vocabulario, clips dinámicos de series y difusión de noticias. Además, se consolidó la sección de Noticias y Recursos para el aprendizaje continuo de los estudiantes de Cúcuta.",
+    date: "Semana 4 • Redes Sociales y Difusión",
+    tags: ["Instagram Oficial", "Redes Sociales", "Comunidad Digital", "Noticias & Tips", "Cúcuta Bilingüe"],
+    highlights: [
+      "Creación y vinculación oficial de la cuenta en Instagram: @lets_do_it.together.",
+      "Integración de botones y accesos directos interactivos en todo el sitio web (Navegación, Inicio, Bitácora y Pie de página).",
+      "Publicación de los primeros reels dinámicos de pronunciación y escenas audiovisuales.",
+      "Consolidación de la sección de Noticias y Recursos pedagógicos para el aprendizaje continuo."
+    ],
+    imageUrl: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Evidencia gráfica: Cuenta oficial de Instagram @lets_do_it.together vinculada al proyecto",
     multimediaType: "icfes"
   }
 ];
