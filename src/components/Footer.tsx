@@ -68,9 +68,9 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
 
           {/* Col 3: Redes Sociales Oficiales */}
           <div className="space-y-3">
-            <h4 className="text-white text-sm font-bold uppercase tracking-wider">Redes Sociales (Semana 4)</h4>
+            <h4 className="text-white text-sm font-bold uppercase tracking-wider">Redes Sociales</h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Sigue nuestra cuenta oficial en Instagram para micro-lecciones, reels y tips para el ICFES.
+              Sigue nuestra cuenta oficial en Instagram para ver nuestros reels de pronunciación y contenido dinámico.
             </p>
             <a
               href="https://www.instagram.com/lets_do_it.together/"
