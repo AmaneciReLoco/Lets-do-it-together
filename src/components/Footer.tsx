@@ -1,6 +1,6 @@
 import React from 'react';
 import { projectInfo } from '../data/projectData';
-import { BookOpen, MapPin } from 'lucide-react';
+import { BookOpen, MapPin, Instagram } from 'lucide-react';
 
 interface FooterProps {
   setActiveTab: (tab: 'inicio' | 'semanas' | 'noticias') => void;
@@ -14,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           
           {/* Col 1: Marca & Origen */}
-          <div className="space-y-4 lg:col-span-2">
+          <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-sky-600 flex items-center justify-center text-white font-bold">
                 <BookOpen className="w-5 h-5" />
@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
               </span>
             </div>
             
-            <p className="text-sm text-slate-300 max-w-md leading-relaxed">
+            <p className="text-sm text-slate-300 leading-relaxed">
               Academia de inglés innovadora y accesible en {projectInfo.city}, {projectInfo.country}. 
               Enseñamos mediante métodos dinámicos de inmersión cultural (música, series y webcomics) guiados por valores cristianos de servicio mutuo.
             </p>
@@ -66,7 +66,26 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
             </ul>
           </div>
 
-          {/* Col 3: Ubicación y Contacto */}
+          {/* Col 3: Redes Sociales Oficiales */}
+          <div className="space-y-3">
+            <h4 className="text-white text-sm font-bold uppercase tracking-wider">Redes Sociales (Semana 4)</h4>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Sigue nuestra cuenta oficial en Instagram para micro-lecciones, reels y tips para el ICFES.
+            </p>
+            <a
+              href="https://www.instagram.com/lets_do_it.together/"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="footer-instagram-link"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 hover:from-pink-600 hover:to-amber-600 text-white transition-all shadow-md"
+              title="Visítanos en Instagram @lets_do_it.together"
+            >
+              <Instagram className="w-4 h-4" />
+              <span>@lets_do_it.together</span>
+            </a>
+          </div>
+
+          {/* Col 4: Ubicación y Contacto */}
           <div className="space-y-3">
             <h4 className="text-white text-sm font-bold uppercase tracking-wider">Ubicación</h4>
             <p className="text-xs text-slate-400 leading-relaxed">
