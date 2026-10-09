@@ -15,7 +15,9 @@ import {
   Users, 
   ArrowRight,
   ShieldCheck,
-  Award
+  Award,
+  Instagram,
+  ExternalLink
 } from 'lucide-react';
 
 interface InicioViewProps {
@@ -228,7 +230,39 @@ export const InicioView: React.FC<InicioViewProps> = ({ onNavigateToWeeks }) => 
         </div>
       </section>
 
-      {/* 5. Cifras y Diagnóstico del Contexto en Cúcuta */}
+      {/* 5. Comunidad en Instagram (Avance de la Semana 4) */}
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-pink-600 via-rose-600 to-amber-500 text-white p-8 sm:p-12 shadow-xl">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="space-y-3 max-w-2xl text-center md:text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-xs text-white border border-white/30">
+              <Instagram className="w-3.5 h-3.5" />
+              Avance de la Semana 4 • Redes Sociales Oficiales
+            </div>
+            <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
+              ¡Aprende inglés a diario con nosotros en Instagram!
+            </h2>
+            <p className="text-white/90 text-sm sm:text-base leading-relaxed">
+              En nuestra cuenta oficial <strong className="text-amber-200">@lets_do_it.together</strong> compartimos reels de pronunciación con películas, vocabulario clave con canciones, y dinámicas rápidas para el ICFES de inglés.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+            <a
+              href="https://www.instagram.com/lets_do_it.together/"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="hero-instagram-cta"
+              className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white text-rose-600 hover:bg-slate-100 font-extrabold text-sm sm:text-base shadow-lg hover:scale-105 transition-all"
+            >
+              <Instagram className="w-5 h-5 text-rose-600" />
+              <span>Seguir en @lets_do_it.together</span>
+              <ExternalLink className="w-4 h-4 text-rose-400" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Cifras y Diagnóstico del Contexto en Cúcuta */}
       <section className="bg-gradient-to-r from-sky-900 to-indigo-900 rounded-3xl p-8 sm:p-12 text-white shadow-lg">
         <div className="grid md:grid-cols-3 gap-8 items-center text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
           <div className="space-y-2 p-4">
