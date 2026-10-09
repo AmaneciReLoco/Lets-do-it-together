@@ -242,9 +242,8 @@ export const ContenidoSemanalView: React.FC = () => {
                   </span>
                 </div>
                 <ul className="space-y-1.5 text-slate-300 list-disc list-inside">
-                  <li>Micro-lecciones diarias de vocabulario</li>
-                  <li>Reels con escenas de series y películas</li>
-                  <li>Preguntas semanales tipo ICFES en historias</li>
+                  <li>Reels dinámicos de pronunciación y escenas</li>
+                  <li>Contenido audiovisual para aprender inglés</li>
                   <li>Consolidación de noticias y recursos web</li>
                 </ul>
                 <a
